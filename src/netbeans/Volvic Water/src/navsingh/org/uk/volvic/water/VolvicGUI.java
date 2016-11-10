@@ -31,6 +31,11 @@ public class VolvicGUI extends javax.swing.JFrame {
         headingLbl.setText("Volvic Water");
 
         logoLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/navsingh/org/uk/volvic/water/volvic.png"))); // NOI18N
+        logoLbl.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                logoLblMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
@@ -69,6 +74,12 @@ public class VolvicGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void logoLblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoLblMouseClicked
+        InformationGUI myInfoGUI = new InformationGUI();
+        myInfoGUI.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_logoLblMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
