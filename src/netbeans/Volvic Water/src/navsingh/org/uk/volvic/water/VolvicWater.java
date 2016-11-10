@@ -9,7 +9,8 @@ package navsingh.org.uk.volvic.water;
 public class VolvicWater {
 
     public static void main(String[] args) {
-        
+        VolvicGUI myGUI = new VolvicGUI();
+        myGUI.setVisible(true);
     }
     
 }
